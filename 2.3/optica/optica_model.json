@@ -1,0 +1,1189 @@
+{
+    "modelName": "optica",
+    "collections": [
+        {
+            "collectionName": "Suppliers",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "7075dc5d-c232-4498-9c49-64313bf40cfa",
+                    "primaryKey": true,
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "97762816-3dad-4de3-aaf1-4cd933137835"
+                    ]
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "0b10256a-2da7-42c2-82fc-577dcac395ab",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "nif",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "required": true,
+                    "GUID": "2791b80b-6437-4a5f-82a3-2a82b570b928",
+                    "error": {}
+                },
+                {
+                    "name": "fax",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "GUID": "4d7fed59-7c43-4f9b-b532-f4e238714828",
+                    "mode": "integer32",
+                    "error": {}
+                },
+                {
+                    "name": "phone_number",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "required": true,
+                    "GUID": "a1684350-a40a-4601-bad7-26619da95b64",
+                    "mode": "integer32",
+                    "error": {}
+                },
+                {
+                    "name": "address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "number",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "GUID": "91a2aab6-db4f-4a68-8655-2e13cce8f813",
+                            "mode": "integer32",
+                            "error": {}
+                        },
+                        {
+                            "name": "street",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "ff926eb7-fbcc-48e8-bf58-30bf9a52a209",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "floor",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "GUID": "980f3728-4be5-4e17-a813-4e2efaa28886",
+                            "mode": "integer32",
+                            "error": {}
+                        },
+                        {
+                            "name": "door",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "GUID": "e7dcb45f-657d-4168-8526-f43c5e176f79",
+                            "mode": "integer32",
+                            "error": {}
+                        },
+                        {
+                            "name": "zipcode",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "required": true,
+                            "GUID": "0f61be94-d83a-4e92-8e07-15f2589caf4c",
+                            "mode": "integer32",
+                            "error": {}
+                        },
+                        {
+                            "name": "country",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "542525b8-e193-442e-865a-33370e889969",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "20696155-f243-47f0-b838-fed9bb34fdbc",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "83368828-6701-490d-aed0-23d7595afd7f"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "3bc79664-6772-49c1-9375-8f23cda4fb64",
+            "bucketId": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+        },
+        {
+            "collectionName": "Glasses",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "5ff03e69-899b-4a74-b07a-c2047f7412cb",
+                    "primaryKey": true,
+                    "required": true,
+                    "error": {},
+                    "childRelationships": [
+                        "a75f9489-a123-4015-90a4-6a2583d545be"
+                    ]
+                },
+                {
+                    "name": "supplier",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "a5b4f558-7f58-4a89-83b7-6d28c5653c6e",
+                    "primaryKey": false,
+                    "required": true,
+                    "foreignCollection": "3bc79664-6772-49c1-9375-8f23cda4fb64",
+                    "foreignField": [
+                        "3bc79664-6772-49c1-9375-8f23cda4fb64",
+                        "7075dc5d-c232-4498-9c49-64313bf40cfa"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "97762816-3dad-4de3-aaf1-4cd933137835",
+                    "error": {}
+                },
+                {
+                    "name": "type",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "785f9f2f-b5b6-4602-9869-7c1b227f322c",
+                    "required": true,
+                    "foreignCollection": "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+                    "foreignField": [
+                        "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+                        "a747b1c2-126a-48a0-8f9f-c4bc5d9669d4",
+                        "655eda44-3aa3-4a5e-8c61-7b631af934d3"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "5f0f6a24-d4eb-442a-ab5a-283e4b56bfe2",
+                    "error": {}
+                },
+                {
+                    "name": "price",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "numeric",
+                    "GUID": "971a2ea4-14b6-493b-a722-5fc6f06fa7d4",
+                    "required": true,
+                    "mode": "decimal128",
+                    "error": {}
+                },
+                {
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "1bd209ae-d1a7-48b8-9130-494c4ad03220",
+                    "name": "brand",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "lenses",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "right",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "perscription",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "16f75bb7-9f94-47cf-a967-a0c19454c4cc",
+                                    "mode": "decimal128",
+                                    "required": true,
+                                    "error": {}
+                                },
+                                {
+                                    "name": "color",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "f134bd99-382a-4b22-9343-755a62d64c1f",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "aa2b173b-b001-4888-b125-5ba36ddcb09a",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "left",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "document",
+                            "properties": [
+                                {
+                                    "name": "perscription",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "numeric",
+                                    "GUID": "a6358c4b-5eed-447c-9d9c-bfa4266233af",
+                                    "mode": "decimal128",
+                                    "required": true,
+                                    "error": {}
+                                },
+                                {
+                                    "name": "color",
+                                    "hackoladeMeta": {},
+                                    "isActivated": true,
+                                    "type": "string",
+                                    "GUID": "5db19316-f3be-4eb2-b19e-b27f860d8e3b",
+                                    "required": true,
+                                    "error": {}
+                                }
+                            ],
+                            "additionalProperties": false,
+                            "GUID": "cc2db179-04ea-404e-afb4-6e98d3cc8cd9",
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "2d9087b6-90c6-4a36-8941-f09c1819ac64",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "2ff87b51-5e9b-4436-8f61-93f7e3ba07c4"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "25d4b738-0b5a-4024-8846-13d006f81fcd",
+            "bucketId": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+        },
+        {
+            "collectionName": "Frames",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "frame",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "id",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "objectId",
+                            "GUID": "655eda44-3aa3-4a5e-8c61-7b631af934d3",
+                            "required": true,
+                            "childRelationships": [
+                                "5f0f6a24-d4eb-442a-ab5a-283e4b56bfe2"
+                            ],
+                            "error": {}
+                        },
+                        {
+                            "name": "type",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "a8cba0e2-289d-41ab-b1f0-48fbc80909dd",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "a747b1c2-126a-48a0-8f9f-c4bc5d9669d4",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "edd30bf1-c3e3-4d88-8f07-ae2a44752a9c"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+            "bucketId": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+        },
+        {
+            "collectionName": "Sales",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "glasses",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "6c4de0c8-f833-461e-b5bf-8ed131acf8f4",
+                    "required": true,
+                    "primaryKey": false,
+                    "foreignCollection": "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                    "foreignField": [
+                        "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                        "5ff03e69-899b-4a74-b07a-c2047f7412cb"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "a75f9489-a123-4015-90a4-6a2583d545be",
+                    "error": {}
+                },
+                {
+                    "name": "sales_person",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "83c2c2a4-cb33-4b6d-8ff5-488b8848a2bd",
+                    "required": true,
+                    "foreignCollection": "e00df9cb-535c-47f4-8d30-e3acef944ca9",
+                    "foreignField": [
+                        "e00df9cb-535c-47f4-8d30-e3acef944ca9",
+                        "cade6b92-5cce-412f-b2c1-5acf977235c1"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "ef63efcc-3a0a-424d-80cc-6c8cd9bddd90",
+                    "error": {}
+                },
+                {
+                    "name": "client",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "7c090507-3180-45bf-85ca-a485fa116a0f",
+                    "foreignCollection": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                    "foreignField": [
+                        "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                        "8c9c03e3-0879-4889-a077-9dac3c3d1687"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "0fc041eb-8333-4896-8128-b2fb3e40ef17",
+                    "error": {}
+                },
+                {
+                    "name": "date_sold",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "7e8e1c20-7b06-427e-af6b-9c33e8bb11e5",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "d0d8edb1-d98a-484d-b6da-db39d63dd667"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+            "bucketId": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+        },
+        {
+            "collectionName": "Clients",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "8c9c03e3-0879-4889-a077-9dac3c3d1687",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {},
+                    "childRelationships": [
+                        "946b1037-ce5b-4e82-b0fe-65b04e9bf347",
+                        "0fc041eb-8333-4896-8128-b2fb3e40ef17"
+                    ]
+                },
+                {
+                    "name": "referred_by",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "8c24bbcd-1675-418d-b95b-e286ce6f69d4",
+                    "required": false,
+                    "foreignCollection": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                    "foreignField": [
+                        "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                        "8c9c03e3-0879-4889-a077-9dac3c3d1687"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "946b1037-ce5b-4e82-b0fe-65b04e9bf347",
+                    "error": {}
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "b9daa746-63ec-4bf9-a6ae-1f0d1dcfdc5b",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "phone_number",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "b98200ca-ab0a-4b6b-a2f3-ad2e99a337d5",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "email",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "5076f5e4-8e89-4ca3-ab8e-f87921449b14",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "date_registered",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "date",
+                    "primaryKey": false,
+                    "GUID": "bd17f985-4273-4902-a385-61a77c671eeb",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "name": "address",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "document",
+                    "properties": [
+                        {
+                            "name": "number",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "acaf9f4c-2e3d-4e49-b555-bd5bbb8dff6e",
+                            "mode": "integer32",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "street",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "e32ad851-48a5-4727-949d-877bf7cdb691",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "floor",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "9f720cb4-7580-4c63-bb15-0a170b0e5d4c",
+                            "mode": "integer32",
+                            "required": true,
+                            "error": {}
+                        },
+                        {
+                            "name": "door",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "5e755db5-a404-49b9-997e-6d8709f61c79",
+                            "required": true,
+                            "mode": "integer32",
+                            "error": {}
+                        },
+                        {
+                            "name": "zipcode",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "numeric",
+                            "GUID": "f071c1a5-9b0f-47fa-be83-48dfed9e331c",
+                            "required": true,
+                            "mode": "integer32",
+                            "error": {}
+                        },
+                        {
+                            "name": "country",
+                            "hackoladeMeta": {},
+                            "isActivated": true,
+                            "type": "string",
+                            "GUID": "b2480357-3a6e-4897-b282-26c18eecaa1f",
+                            "required": true,
+                            "error": {}
+                        }
+                    ],
+                    "additionalProperties": false,
+                    "GUID": "dd7a2441-bc40-4fc1-b1a8-b45d9d22d5f1",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "dd0f801a-7493-497a-b024-ea154131f9e9"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+            "bucketId": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+        },
+        {
+            "collectionName": "Employees",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "id",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "objectId",
+                    "GUID": "cade6b92-5cce-412f-b2c1-5acf977235c1",
+                    "required": true,
+                    "primaryKey": true,
+                    "error": {},
+                    "childRelationships": [
+                        "ef63efcc-3a0a-424d-80cc-6c8cd9bddd90"
+                    ]
+                },
+                {
+                    "name": "name",
+                    "hackoladeMeta": {},
+                    "isActivated": true,
+                    "type": "string",
+                    "GUID": "8cd13f10-0ba0-44e6-9da8-0de18f35f90e",
+                    "required": true,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "748f1486-61c5-469f-8d44-a99da3e16b74"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "e00df9cb-535c-47f4-8d30-e3acef944ca9",
+            "bucketId": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "Optica",
+            "type": "bucket",
+            "collectionIds": [
+                "3bc79664-6772-49c1-9375-8f23cda4fb64",
+                "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+                "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+                "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                "e00df9cb-535c-47f4-8d30-e3acef944ca9"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef",
+            "hackoladeMeta": {
+                "namingConvention": ""
+            }
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk Glasses.supplier to Suppliers.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "3bc79664-6772-49c1-9375-8f23cda4fb64",
+                    "7075dc5d-c232-4498-9c49-64313bf40cfa"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                    "a5b4f558-7f58-4a89-83b7-6d28c5653c6e"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "97762816-3dad-4de3-aaf1-4cd933137835",
+            "parentCollection": "3bc79664-6772-49c1-9375-8f23cda4fb64",
+            "childCollection": "25d4b738-0b5a-4024-8846-13d006f81fcd",
+            "hackoladeStyles": {
+                "GUID": "1b98a778-bec6-4342-af12-5cbef4408da8",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1224.6666666666665,
+                        "y": 1183.3333333333335
+                    },
+                    {
+                        "x": 1187,
+                        "y": 1183.3333333333335
+                    },
+                    {
+                        "x": 1187,
+                        "y": 1155.5
+                    },
+                    {
+                        "x": 1149.3333333333335,
+                        "y": 1155.5
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Glasses.type to Frames.frame.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+                    "a747b1c2-126a-48a0-8f9f-c4bc5d9669d4",
+                    "655eda44-3aa3-4a5e-8c61-7b631af934d3"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                    "785f9f2f-b5b6-4602-9869-7c1b227f322c"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "5f0f6a24-d4eb-442a-ab5a-283e4b56bfe2",
+            "parentCollection": "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+            "childCollection": "25d4b738-0b5a-4024-8846-13d006f81fcd",
+            "hackoladeStyles": {
+                "GUID": "995a1d30-a9e6-4c0c-81da-b3d18bde4934",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1585.6666666666665,
+                        "y": 1183.3333333333335
+                    },
+                    {
+                        "x": 1650.4802259887006,
+                        "y": 1183.3333333333335
+                    },
+                    {
+                        "x": 1650.4802259887006,
+                        "y": 1070.874293785311
+                    },
+                    {
+                        "x": 1715.2937853107348,
+                        "y": 1070.874293785311
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk Clients.referred_by to Clients.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                    "8c9c03e3-0879-4889-a077-9dac3c3d1687"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                    "8c24bbcd-1675-418d-b95b-e286ce6f69d4"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "946b1037-ce5b-4e82-b0fe-65b04e9bf347",
+            "parentCollection": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+            "childCollection": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+            "hackoladeStyles": {
+                "GUID": "97755c79-ce9e-4396-a7f1-9dcdc4df450c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1068.6666666666663,
+                        "y": 1401.3333333333335
+                    },
+                    {
+                        "x": 1068.6666666666663,
+                        "y": 1376.3333333333335
+                    },
+                    {
+                        "x": 1273.6666666666663,
+                        "y": 1376.3333333333335
+                    },
+                    {
+                        "x": 1273.6666666666663,
+                        "y": 1515.0000000000002
+                    },
+                    {
+                        "x": 1248.6666666666663,
+                        "y": 1515.0000000000002
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "right"
+                ]
+            }
+        },
+        {
+            "name": "fk Sales.sales_person to Employees.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "e00df9cb-535c-47f4-8d30-e3acef944ca9",
+                    "cade6b92-5cce-412f-b2c1-5acf977235c1"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+                    "83c2c2a4-cb33-4b6d-8ff5-488b8848a2bd"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "ef63efcc-3a0a-424d-80cc-6c8cd9bddd90",
+            "parentCollection": "e00df9cb-535c-47f4-8d30-e3acef944ca9",
+            "childCollection": "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+            "hackoladeStyles": {
+                "GUID": "d310368a-9f6b-4a52-b052-0a90516b9e7c",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1601.4938579499594,
+                        "y": 1482.8143825665875
+                    },
+                    {
+                        "x": 1601.4938579499594,
+                        "y": 1431.2910290556906
+                    },
+                    {
+                        "x": 1767.4611622276043,
+                        "y": 1431.2910290556906
+                    },
+                    {
+                        "x": 1767.4611622276043,
+                        "y": 1379.767675544794
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Sales.glasses to Glasses.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                    "5ff03e69-899b-4a74-b07a-c2047f7412cb"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+                    "6c4de0c8-f833-461e-b5bf-8ed131acf8f4"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "a75f9489-a123-4015-90a4-6a2583d545be",
+            "parentCollection": "25d4b738-0b5a-4024-8846-13d006f81fcd",
+            "childCollection": "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+            "hackoladeStyles": {
+                "GUID": "693c593a-c510-4c2f-967b-215e5525b7f5",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1459.160524616626,
+                        "y": 1482.8143825665875
+                    },
+                    {
+                        "x": 1459.160524616626,
+                        "y": 1410.0738579499605
+                    },
+                    {
+                        "x": 1405.1666666666665,
+                        "y": 1410.0738579499605
+                    },
+                    {
+                        "x": 1405.1666666666665,
+                        "y": 1337.3333333333335
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
+        },
+        {
+            "name": "fk Sales.client to Clients.id",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                    "8c9c03e3-0879-4889-a077-9dac3c3d1687"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+                    "7c090507-3180-45bf-85ca-a485fa116a0f"
+                ]
+            ],
+            "childCardinality": "1",
+            "GUID": "0fc041eb-8333-4896-8128-b2fb3e40ef17",
+            "parentCollection": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+            "childCollection": "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+            "hackoladeStyles": {
+                "GUID": "ca50bbc4-c07c-44a1-9be4-47a3e17b0ab0",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1316.8271912832927,
+                        "y": 1614.8143825665875
+                    },
+                    {
+                        "x": 1282.7469289749795,
+                        "y": 1614.8143825665875
+                    },
+                    {
+                        "x": 1282.7469289749795,
+                        "y": 1628.6666666666667
+                    },
+                    {
+                        "x": 1248.6666666666663,
+                        "y": 1628.6666666666667
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef": "Optica",
+        "3bc79664-6772-49c1-9375-8f23cda4fb64": "Suppliers",
+        "25d4b738-0b5a-4024-8846-13d006f81fcd": "Glasses",
+        "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f": "Frames",
+        "05b7f840-3b7f-4632-b6d3-142e3f1bcc35": "Sales",
+        "85782b75-6ae1-486b-8da8-8eabd201fb24": "Clients",
+        "7075dc5d-c232-4498-9c49-64313bf40cfa": "id",
+        "2791b80b-6437-4a5f-82a3-2a82b570b928": "nif",
+        "4d7fed59-7c43-4f9b-b532-f4e238714828": "fax",
+        "a1684350-a40a-4601-bad7-26619da95b64": "phone_number",
+        "0b10256a-2da7-42c2-82fc-577dcac395ab": "name",
+        "5ff03e69-899b-4a74-b07a-c2047f7412cb": "id",
+        "a5b4f558-7f58-4a89-83b7-6d28c5653c6e": "supplier",
+        "97762816-3dad-4de3-aaf1-4cd933137835": "fk Glasses.supplier to Suppliers.id",
+        "6c4de0c8-f833-461e-b5bf-8ed131acf8f4": "glasses",
+        "83c2c2a4-cb33-4b6d-8ff5-488b8848a2bd": "sales_person",
+        "20696155-f243-47f0-b838-fed9bb34fdbc": "address",
+        "785f9f2f-b5b6-4602-9869-7c1b227f322c": "type",
+        "971a2ea4-14b6-493b-a722-5fc6f06fa7d4": "price",
+        "1bd209ae-d1a7-48b8-9130-494c4ad03220": "brand",
+        "a747b1c2-126a-48a0-8f9f-c4bc5d9669d4": "frame",
+        "7e8e1c20-7b06-427e-af6b-9c33e8bb11e5": "date_sold",
+        "8c9c03e3-0879-4889-a077-9dac3c3d1687": "id",
+        "b98200ca-ab0a-4b6b-a2f3-ad2e99a337d5": "phone_number",
+        "5076f5e4-8e89-4ca3-ab8e-f87921449b14": "email",
+        "bd17f985-4273-4902-a385-61a77c671eeb": "date_registered",
+        "91a2aab6-db4f-4a68-8655-2e13cce8f813": "number",
+        "ff926eb7-fbcc-48e8-bf58-30bf9a52a209": "street",
+        "980f3728-4be5-4e17-a813-4e2efaa28886": "floor",
+        "e7dcb45f-657d-4168-8526-f43c5e176f79": "door",
+        "0f61be94-d83a-4e92-8e07-15f2589caf4c": "zipcode",
+        "542525b8-e193-442e-865a-33370e889969": "country",
+        "a8cba0e2-289d-41ab-b1f0-48fbc80909dd": "type",
+        "5f0f6a24-d4eb-442a-ab5a-283e4b56bfe2": "fk Glasses.type to Frames.frame.id",
+        "946b1037-ce5b-4e82-b0fe-65b04e9bf347": "fk Clients.referred_by to Clients.id",
+        "e00df9cb-535c-47f4-8d30-e3acef944ca9": "Employees",
+        "cade6b92-5cce-412f-b2c1-5acf977235c1": "id",
+        "8cd13f10-0ba0-44e6-9da8-0de18f35f90e": "name",
+        "ef63efcc-3a0a-424d-80cc-6c8cd9bddd90": "fk Sales.sales_person to Employees.id",
+        "a75f9489-a123-4015-90a4-6a2583d545be": "fk Sales.glasses to Glasses.id",
+        "0fc041eb-8333-4896-8128-b2fb3e40ef17": "fk Sales.client to Clients.id",
+        "7c090507-3180-45bf-85ca-a485fa116a0f": "client",
+        "b9daa746-63ec-4bf9-a6ae-1f0d1dcfdc5b": "name",
+        "8c24bbcd-1675-418d-b95b-e286ce6f69d4": "referred_by",
+        "dd7a2441-bc40-4fc1-b1a8-b45d9d22d5f1": "address",
+        "2d9087b6-90c6-4a36-8941-f09c1819ac64": "lenses",
+        "655eda44-3aa3-4a5e-8c61-7b631af934d3": "id"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "d2e1f43f-a8a3-41ee-a382-2c47ee018219"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "fe08d95f-7cc0-4551-9af9-6552d0380838"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "b4c23c89-834f-4da2-9634-b571d017001b"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v5.0",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2023-05-15T09:40:16.833Z",
+    "GUID": "8cf953c2-62cf-40dc-98f7-ba8e8616123e",
+    "isLineageEnabled": false,
+    "hackoladeMeta": {
+        "validationErrors": {
+            "modelName": false
+        }
+    },
+    "lastModifTS": "2023-05-15T10:58:11.687Z",
+    "persistenceSchemaVersion": "6",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "6.10.1"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "3bc79664-6772-49c1-9375-8f23cda4fb64",
+                        "x": 905.3333333333334,
+                        "y": 1031,
+                        "width": 244,
+                        "height": 249,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "25d4b738-0b5a-4024-8846-13d006f81fcd",
+                        "x": 1224.6666666666665,
+                        "y": 1029.3333333333335,
+                        "width": 361,
+                        "height": 308,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "a812b9c7-792d-4ed7-aa6c-9d622cc1f85f",
+                        "x": 1715.2937853107348,
+                        "y": 1027.374293785311,
+                        "width": 190,
+                        "height": 87,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "05b7f840-3b7f-4632-b6d3-142e3f1bcc35",
+                        "x": 1316.8271912832927,
+                        "y": 1482.8143825665875,
+                        "width": 427,
+                        "height": 264,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "85782b75-6ae1-486b-8da8-8eabd201fb24",
+                        "x": 888.6666666666663,
+                        "y": 1401.3333333333335,
+                        "width": 360,
+                        "height": 341,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "e00df9cb-535c-47f4-8d30-e3acef944ca9",
+                        "x": 1627.4611622276043,
+                        "y": 1246.767675544794,
+                        "width": 280,
+                        "height": 133,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 848.6666666666663,
+                        "y": 987.374293785311,
+                        "GUID": "0cd3b54c-7ce5-45b3-a685-3aa2ce3280ef"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

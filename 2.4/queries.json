@@ -52,13 +52,13 @@
             }
         },{
             "11":{
-                "consulta": "Escriu una consulta de MongoDB per a trobar els restaurants que no cuinen menjar 'American ' i tenen algun score superior a 70 i longitud inferior a -65.754168.",
-                "query" : "db.restaurants.find({$and: [{cuisine: {$ne:'American '}}, {'grades.score': {$gt: 70}}, {'address.coord.0': {$lt: -65.754168}}]})"
+                "consulta": "Escriu una consulta de MongoDB per a trobar els restaurants que no cuinen menjar 'American' i tenen algun score superior a 70 i longitud inferior a -65.754168.",
+                "query" : "db.restaurants.find({$and: [{cuisine: {$ne:'American'}}, {'grades.score': {$gt: 70}}, {'address.coord.0': {$lt: -65.754168}}]})"
             }
         },{
             "12":{
                 "consulta": "Escriu una consulta per trobar els restaurants que no preparen menjar 'American' i tenen algun score superior a 70 i que, a més, es localitzen en longituds inferiors a -65.754168. Nota: Fes aquesta consulta sense utilitzar operador $and.",
-                "query" : "db.restaurants.find({'cuisine': {$ne:'American '}, 'grades.score': {$gt: 70}, 'address.coord.0': {$lt: -65.754168}})"
+                "query" : "db.restaurants.find({'cuisine': {$ne:'American'}, 'grades.score': {$gt: 70}, 'address.coord.0': {$lt: -65.754168}})"
             }
         },{
             "13":{

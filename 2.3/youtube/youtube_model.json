@@ -932,7 +932,37 @@
             "childCardinality": "1",
             "GUID": "5baa1dfe-3e71-4744-85c2-2d46e4b3ab2e",
             "parentCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec",
-            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d"
+            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d",
+            "hackoladeStyles": {
+                "GUID": "2019349d-3d23-48bb-8ad4-e3f853180408",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1207,
+                        "y": 1092.6
+                    },
+                    {
+                        "x": 1285,
+                        "y": 1092.6
+                    },
+                    {
+                        "x": 1285,
+                        "y": 1186
+                    },
+                    {
+                        "x": 1363,
+                        "y": 1186
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
         },
         {
             "name": "fk comment.video to video.id",
@@ -953,7 +983,37 @@
             "childCardinality": "1",
             "GUID": "f66666c1-152e-48f7-a832-e2c3ea7cd301",
             "parentCollection": "096a6ad1-9f66-4680-b47d-3a752416494d",
-            "childCollection": "782b48e9-435b-4469-8cf5-fd389398764e"
+            "childCollection": "782b48e9-435b-4469-8cf5-fd389398764e",
+            "hackoladeStyles": {
+                "GUID": "746a1a15-162d-4815-b393-f797574e886a",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1397,
+                        "y": 1637
+                    },
+                    {
+                        "x": 1302,
+                        "y": 1637
+                    },
+                    {
+                        "x": 1302,
+                        "y": 1346.4
+                    },
+                    {
+                        "x": 1207,
+                        "y": 1346.4
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
         },
         {
             "name": "fk comment.user_id to user.id",
@@ -974,7 +1034,37 @@
             "childCardinality": "1",
             "GUID": "bfc8f21a-8b24-42fd-ab30-60c88794d736",
             "parentCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec",
-            "childCollection": "782b48e9-435b-4469-8cf5-fd389398764e"
+            "childCollection": "782b48e9-435b-4469-8cf5-fd389398764e",
+            "hackoladeStyles": {
+                "GUID": "61c9f50d-cc2d-4b7d-ab7a-2b06040d7307",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1515.5,
+                        "y": 1531
+                    },
+                    {
+                        "x": 1515.5,
+                        "y": 1448
+                    },
+                    {
+                        "x": 1516,
+                        "y": 1448
+                    },
+                    {
+                        "x": 1516,
+                        "y": 1365
+                    }
+                ],
+                "sides": [
+                    "top",
+                    "bottom"
+                ]
+            }
         },
         {
             "name": "fk playlist.videos.[0] to video.id",
@@ -996,7 +1086,37 @@
             "childCardinality": "1",
             "GUID": "4f3d20ab-5e7a-430d-b684-e929d47b5d5b",
             "parentCollection": "096a6ad1-9f66-4680-b47d-3a752416494d",
-            "childCollection": "067b2f01-e4b9-4459-8ff9-86fbe2b9b152"
+            "childCollection": "067b2f01-e4b9-4459-8ff9-86fbe2b9b152",
+            "hackoladeStyles": {
+                "GUID": "bce72cba-7d9a-4172-84ac-7a93027d595b",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1847,
+                        "y": 1465.6666666666667
+                    },
+                    {
+                        "x": 1527,
+                        "y": 1465.6666666666667
+                    },
+                    {
+                        "x": 1527,
+                        "y": 1177.2
+                    },
+                    {
+                        "x": 1207,
+                        "y": 1177.2
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
         },
         {
             "name": "fk user.channel to channel.id",
@@ -1017,7 +1137,37 @@
             "childCardinality": "1",
             "GUID": "4cf8b6c5-21df-4390-bb93-139a94c0cb31",
             "parentCollection": "49f530fc-7110-40e2-80c8-48f231345b42",
-            "childCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec"
+            "childCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec",
+            "hackoladeStyles": {
+                "GUID": "5194f23a-28a1-4aa3-8f27-89338ddd41b8",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1669,
+                        "y": 1096.5
+                    },
+                    {
+                        "x": 1741.5,
+                        "y": 1096.5
+                    },
+                    {
+                        "x": 1741.5,
+                        "y": 1060.3333333333333
+                    },
+                    {
+                        "x": 1814,
+                        "y": 1060.3333333333333
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
         },
         {
             "name": "fk user.playlists.[0] to playlist.id",
@@ -1039,7 +1189,37 @@
             "childCardinality": "1",
             "GUID": "8f4d73a9-4214-45a7-8926-78a18c1d129e",
             "parentCollection": "067b2f01-e4b9-4459-8ff9-86fbe2b9b152",
-            "childCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec"
+            "childCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec",
+            "hackoladeStyles": {
+                "GUID": "7fdb9cff-66dc-48e5-89c4-8ff28b270c35",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1669,
+                        "y": 1275.5
+                    },
+                    {
+                        "x": 1758,
+                        "y": 1275.5
+                    },
+                    {
+                        "x": 1758,
+                        "y": 1411.3333333333333
+                    },
+                    {
+                        "x": 1847,
+                        "y": 1411.3333333333333
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
         },
         {
             "name": "fk user.channels.[0] to channel.id",
@@ -1061,7 +1241,37 @@
             "childCardinality": "1",
             "GUID": "82072c64-5d24-4700-b8d4-2a0dbd4650ab",
             "parentCollection": "49f530fc-7110-40e2-80c8-48f231345b42",
-            "childCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec"
+            "childCollection": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec",
+            "hackoladeStyles": {
+                "GUID": "204bbb9b-0146-4990-a992-9b16aa53a096",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1669,
+                        "y": 1186
+                    },
+                    {
+                        "x": 1741.5,
+                        "y": 1186
+                    },
+                    {
+                        "x": 1741.5,
+                        "y": 1114.6666666666667
+                    },
+                    {
+                        "x": 1814,
+                        "y": 1114.6666666666667
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
         },
         {
             "name": "fk video.comments.[0] to comment.id",
@@ -1083,7 +1293,37 @@
             "childCardinality": "1",
             "GUID": "15ae4747-760d-4ba1-bbfe-1f2f7b22b581",
             "parentCollection": "782b48e9-435b-4469-8cf5-fd389398764e",
-            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d"
+            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d",
+            "hackoladeStyles": {
+                "GUID": "ea7d897f-e36e-49a6-80ec-f1d0e4d16d30",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1207,
+                        "y": 1261.8
+                    },
+                    {
+                        "x": 1302,
+                        "y": 1261.8
+                    },
+                    {
+                        "x": 1302,
+                        "y": 1584
+                    },
+                    {
+                        "x": 1397,
+                        "y": 1584
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
         },
         {
             "name": "fk video.tags.[0] to tag.id",
@@ -1105,7 +1345,37 @@
             "childCardinality": "1",
             "GUID": "c1e7e674-b052-4fa5-994a-5271d3484a7a",
             "parentCollection": "9740dcdc-7fe6-46aa-8e82-e035a1fe7947",
-            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d"
+            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d",
+            "hackoladeStyles": {
+                "GUID": "4ebf8520-dd05-41ea-9d8c-e88fe726f4e5",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1010.3333333333334,
+                        "y": 1431
+                    },
+                    {
+                        "x": 1010.3333333333334,
+                        "y": 1513
+                    },
+                    {
+                        "x": 1040,
+                        "y": 1513
+                    },
+                    {
+                        "x": 1040,
+                        "y": 1595
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
         },
         {
             "name": "fk video.likes/dislikes.[0] to reactions.id",
@@ -1127,7 +1397,37 @@
             "childCardinality": "1",
             "GUID": "8d5bc58a-8813-4c24-894f-b2d9aa2d6236",
             "parentCollection": "e8afe0c7-71c1-485b-b93e-6270d9134552",
-            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d"
+            "childCollection": "096a6ad1-9f66-4680-b47d-3a752416494d",
+            "hackoladeStyles": {
+                "GUID": "17388aa3-f9cf-43f1-8b8e-b74a205042a4",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1108.6666666666667,
+                        "y": 1431
+                    },
+                    {
+                        "x": 1108.6666666666667,
+                        "y": 1575.5
+                    },
+                    {
+                        "x": 1286.5,
+                        "y": 1575.5
+                    },
+                    {
+                        "x": 1286.5,
+                        "y": 1720
+                    }
+                ],
+                "sides": [
+                    "bottom",
+                    "top"
+                ]
+            }
         },
         {
             "name": "fk comment.reactions.[0] to reactions.id",
@@ -1149,7 +1449,37 @@
             "childCardinality": "1",
             "GUID": "d1bdbbdb-8ae0-429f-a41f-95b14698a368",
             "parentCollection": "e8afe0c7-71c1-485b-b93e-6270d9134552",
-            "childCollection": "782b48e9-435b-4469-8cf5-fd389398764e"
+            "childCollection": "782b48e9-435b-4469-8cf5-fd389398764e",
+            "hackoladeStyles": {
+                "GUID": "5f502dd5-3257-40b7-a962-1425ba476a91",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1634,
+                        "y": 1610.5
+                    },
+                    {
+                        "x": 1659,
+                        "y": 1610.5
+                    },
+                    {
+                        "x": 1659,
+                        "y": 1790.5
+                    },
+                    {
+                        "x": 1415,
+                        "y": 1790.5
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "right"
+                ]
+            }
         }
     ],
     "users": [],
@@ -1243,7 +1573,7 @@
     "creationTS": "2023-05-17T07:49:05.598Z",
     "GUID": "574d5f33-58d3-4d37-a32b-ba2b17a10b64",
     "isLineageEnabled": false,
-    "lastModifTS": "2023-05-17T08:22:25.622Z",
+    "lastModifTS": "2023-05-17T08:34:04.469Z",
     "persistenceSchemaVersion": "6",
     "isCreatedByPlugin": true,
     "pluginInformation": {
@@ -1258,58 +1588,58 @@
                 "erd": [
                     {
                         "GUID": "f6def41b-678d-47e6-8c7f-56f8ea3a53ec",
-                        "x": 1080,
-                        "y": 1080,
-                        "width": 240,
-                        "height": 100,
+                        "x": 1363,
+                        "y": 1007,
+                        "width": 306,
+                        "height": 358,
                         "color": {}
                     },
                     {
                         "GUID": "096a6ad1-9f66-4680-b47d-3a752416494d",
-                        "x": 1100,
-                        "y": 1100,
-                        "width": 240,
-                        "height": 100,
+                        "x": 912,
+                        "y": 1008,
+                        "width": 295,
+                        "height": 423,
                         "color": {}
                     },
                     {
                         "GUID": "782b48e9-435b-4469-8cf5-fd389398764e",
-                        "x": 1120,
-                        "y": 1120,
-                        "width": 240,
-                        "height": 100,
+                        "x": 1397,
+                        "y": 1531,
+                        "width": 237,
+                        "height": 159,
                         "color": {}
                     },
                     {
                         "GUID": "9740dcdc-7fe6-46aa-8e82-e035a1fe7947",
-                        "x": 1140,
-                        "y": 1140,
-                        "width": 240,
-                        "height": 100,
+                        "x": 951,
+                        "y": 1595,
+                        "width": 178,
+                        "height": 69,
                         "color": {}
                     },
                     {
                         "GUID": "49f530fc-7110-40e2-80c8-48f231345b42",
-                        "x": 1160,
-                        "y": 1160,
-                        "width": 240,
-                        "height": 100,
+                        "x": 1814,
+                        "y": 1006,
+                        "width": 222,
+                        "height": 163,
                         "color": {}
                     },
                     {
                         "GUID": "067b2f01-e4b9-4459-8ff9-86fbe2b9b152",
-                        "x": 1180,
-                        "y": 1180,
+                        "x": 1847,
+                        "y": 1357,
                         "width": 240,
-                        "height": 100,
+                        "height": 163,
                         "color": {}
                     },
                     {
                         "GUID": "e8afe0c7-71c1-485b-b93e-6270d9134552",
-                        "x": 1200,
-                        "y": 1200,
-                        "width": 240,
-                        "height": 100,
+                        "x": 1158,
+                        "y": 1720,
+                        "width": 257,
+                        "height": 141,
                         "color": {}
                     }
                 ],
@@ -1321,8 +1651,8 @@
                 },
                 "buckets": [
                     {
-                        "x": 1040,
-                        "y": 1040,
+                        "x": 872,
+                        "y": 966,
                         "GUID": "4a8fa2c2-2bf1-4f4f-b775-507b34dc6c71"
                     }
                 ],
